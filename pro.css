@@ -1,0 +1,121 @@
+.textc {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.dotted::before {
+    content: "* * * *";   
+    display: block;        
+    text-align: center;    
+    font-size: 30px;
+    color: gray;
+    margin: 20px 0;
+}
+
+.container {
+    display: flex;  
+    align-items: center;  
+    padding: 30px;
+    background: linear-gradient(to right, #f9f9f9, #e6e6e6); 
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    margin-bottom: 40px;
+}
+
+.left {
+    margin-right: 20px; 
+}
+
+.left img {
+    width: 150px;  
+    height: 150px;
+    object-fit: cover;  
+    border-radius: 50%;  
+    border: 2px solid #0077b5; 
+}
+
+.right {
+    flex: 1;  
+}
+
+.right p {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;  
+    color: #333; 
+    font-weight: bold;
+    line-height: 1.6; 
+}
+
+.social-container {
+    display: flex;
+    justify-content: space-around; 
+    align-items: center; 
+    margin-top: 40px;
+}
+
+.social-content {
+    display: flex;
+    align-items: center;  
+}
+
+.social-content img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 50%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.social-content a {
+    color: #333;
+    font-size: 16px;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-content a:hover {
+    color: #0077b5;  
+    text-decoration: underline;
+    transform: translateY(-2px); 
+}
+
+.social-content img:hover {
+    transform: scale(1.1); 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+}
+
+.certi {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 40px;
+    font-weight: bold;
+    color: #333;
+}
+
+.cert {
+    font-size: medium;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.cert a {
+    color: #0077b5;
+    font-size: 18px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s ease;
+}
+
+.cert a:before {
+    content: url('certificate-icon.png');
+    margin-right: 10px;
+}
+
+.cert a:hover {
+    color: burlywood;
+}
+
