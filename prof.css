@@ -119,3 +119,81 @@
     color: burlywood;
 }
 
+#theme-switch {
+    height: 50px;
+    width: 50px;
+    padding: 0;
+    border-radius: 50%;
+    background-color: var(--base-variant);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
+#theme-switch svg {
+    fill: var(--primary-color);
+}
+
+#theme-switch svg:last-child {
+    display: none;
+}
+
+.darkmode #theme-switch svg:first-child {
+    display: none;
+}
+
+.darkmode #theme-switch svg:last-child {
+    display: block;
+}
+
+.darkmode {
+    --base-color: #070b1d;
+    --base-variant: #101425;
+    --text-color: #ffffff;
+    --secondary-text: #a4a5b8;
+    --primary-color: #3a435d;
+    --accent-color: #0071ff;
+
+    background-color: var(--base-color);
+    color: var(--text-color);
+}
+
+.darkmode .textc {
+    color: var(--text-color);
+}
+
+.darkmode .dotted::before {
+    color: var(--secondary-text);
+}
+
+.darkmode .container {
+    background: linear-gradient(to right, #2c2f38, #1d2129);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.darkmode .left img {
+    border: 2px solid var(--primary-color);
+}
+
+.darkmode .right p {
+    color: var(--secondary-text);
+}
+
+.darkmode .social-content a {
+    color: var(--accent-color);
+}
+
+.darkmode .social-content a:hover {
+    color: burlywood;
+}
+
+.darkmode .cert a {
+    color: var(--accent-color);
+}
+
+.darkmode .cert a:hover {
+    color: burlywood;
+}
