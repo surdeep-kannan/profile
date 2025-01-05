@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <title>PROFILE</title>
-    <link rel="stylesheet" href="pro.css">
+    <link rel="stylesheet" href="prof.css">
 </head>
 <body>
     <div class="textc">RESUME</div>
@@ -30,13 +30,22 @@
     <div class="certi"><h6>CERTIFICATES</h6></div>
     <div class="cert"><a href="Surdeep KannanPIT-Freshmen Batch --certificate.pdf">CISCO PYTHON CERTIFICATE</a></div>
     <div class="dotted"></div>
-<button onclick="scrollToTop()">Scroll to Top</button>
+   <!-- HTML -->
+<button onclick="toggleDarkMode()">Toggle Dark Mode</button>
 
 <script>
-    function scrollToTop() {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
+    function toggleDarkMode() {
+        document.body.classList.toggle("dark-mode");
     }
 </script>
+
+<style>
+    .dark-mode {
+        background-color: black;
+        color: white;
+    }
+</style>
+
 
 </body>
 </html>
